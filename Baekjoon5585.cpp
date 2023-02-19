@@ -14,7 +14,7 @@ int main() {
 	for (int i = 0; i < 6;i++) {
 		numOfEachCoins[i] = money / coins[i];
 		
-		money -= coins[i] * numOfEachCoins[i];
+		money % coins[i];
 		numOfCoin += numOfEachCoins[i];
 	}
 
